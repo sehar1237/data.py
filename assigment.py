@@ -6,19 +6,28 @@ def add_book(books):
   year=int(input("Enter Year:"))
   books=[{"id":101,
           "title":"Python Programming",
-          "author":"John Smith"
+          "author":"John Smith",
           "year": 2023,
-          "copies":5}'
+          "copies":5},
            { "id" : 102,
             "title" : "Data Struchers" ,
             "author" :"Sara khan" ,
              "year" : 2022,
-             "copies" : 5}
+             "copies" : 5},
            {"id" :103,
            "title" : "Computer Networks" ,
-           "author" :" Ali Ahmad "
+           "author" :" Ali Ahmad ",
             "year" : 2021,
             "copies" : 5}]
+print("--- books---")
+for book in books:
+    print(book)
+
+add_book(books)
+
+print("\n--- Update ke baad Books ---")
+for book in books:
+    print(book)
         
     
           
